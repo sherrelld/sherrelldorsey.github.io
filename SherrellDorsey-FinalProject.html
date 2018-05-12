@@ -1,0 +1,255 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <style>
+
+      svg { 
+        display: block;
+        margin: 0 auto;
+      }
+
+      img.block {
+        display: block;
+        border: solid #333 1p;
+        margin: 0 auto;
+      }
+
+      svg {
+        margin-bottom: 15px;
+      }
+
+      .step {
+        padding-bottom: 90px;
+        margin-bottom: 10px;
+      }
+
+      .step, .row {
+        padding-top: 2rem;
+      }
+
+      .step:last-of-type {
+        padding-bottom: 250px;
+      }
+
+      .active {
+        background: beige;
+      }
+
+      footer {
+        background: #f1f1f1;
+        color: #333;
+        padding: 60px 0;
+        text-align: center;
+      }
+      
+      /* 
+        Begin Full-bleed backgrounds 
+
+        Many ways to fix up the text to be readable
+        https://css-tricks.com/design-considerations-text-images/
+      */
+
+      .bg1 {
+        background: url('Images/blackwomentech.jpg');
+      }
+
+      .bg2 {
+        background: url('backgrounds/wall.jpg');
+      }
+
+      .background-image {
+        background-size: cover;
+        padding: 150px 50px;
+        /* 
+          This means...
+          150px spacing between text and top/bottom of image
+          20px spacing between text and left/right of screen
+        */
+        color: white;
+        text-align: center;
+        text-shadow: 0 0 5px rgba(0,0,0,0.5), 
+                     0 0 15px rgba(0,0,0,0.5),
+                     0 0 25px rgba(0,0,0,0.5);
+      }
+
+      .background-image h1 {
+        text-transform: uppercase;
+        font-size: 72px;
+      }
+      /* 
+        End full-bleed backgrounds 
+      */
+
+
+      .graphic {
+        padding-bottom: 30px;
+      }
+
+      /* 
+        The following allows us to make the graphic
+        "sticky" to the top of the page. The "top"
+        attribute should probably be the same as
+        the offset for scrollama (but % instead of decimal)
+      */
+
+      .sticky {
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        position: sticky;
+        height: fit-content;
+        /* IF YOU CHANGE THIS CHANGE THE JAVASCRIPT NEAR THE BOTTOM */
+        top: 33%;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .center-image {
+        margin: 0 auto;
+        display: block;
+        padding: 15px
+      }
+    </style>
+  </head>
+</head>
+<body>
+  <div class="background-image bg1">
+    <h1>Black Tech Workers Face Little Upward Mobility in Small CitiesT</h1>
+    <h3>The U.S. TechHire Designation Hasn't Helped</h3>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col">
+        <h5>By Sherrell Dorsey</h5>
+        <p>
+          
+          A look at private sector employment data derived from the Equal Employment Opportunity Commission reveals that these majority minority cities, even with the TechHire charge, are still facing tremendous barriers to entry for African Americans within the information sectors. 
+
+But independent, private-sector jobs found in much more robust startup communities are hard to come by in smaller cities where industries like manufacturing and agriculture have historically been the largest economic drivers. 
+
+        </p>
+      </div>
+    </div>
+
+  
+
+    <div class="row">
+      <div class="col-sm-8 graphic sticky">
+
+        <p><img id="bubble" src="Images/blacktechworkforce.png"></p>
+      </div>
+      <div class="col-sm-4">
+        <div class="step" id="bubble-step-one">
+          <h3>Jackson, MI Stands Out</h3>
+          <p>Surprisingly, Jackson, Mississippi, was a stark outlier. Compared to the other majority-minority TechHire cities, over the course of eight years, the metro-area had a positive growth rate of African Americans employed in the information sector of over 3 percent steadily outpacing its TechHire compatriats who each saw a decline in employment year after year. 
+</p>
+        </div>
+        <div class="step" id="bubble-step-two">
+          <h3>This Isn't Exactly Progress</h3>
+          <p>On the surface, Jackson can seem like a success story. A  closer look at Jackson's largest employers reveals the truth about what kinds of information-jobs African American employees earn their living 
+
+For those employed in the private sector, these information jobs are mostly in service-based roles at large companies like telecommunications companies like AT&T and Verizon—some of the city’s top employers outside of government and hospital IT departments. 
+</p>
+         
+        </div>
+        
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="col">
+        
+        <p>
+          
+          <h4>Compared to the other majority-minority TechHire cities, the Jackson metro area saw a positive growth rate of over 3 percent increase of African Americans employed in private industry. Jackson’s increase outpaced its TechHire compatriots who each saw a decline.</h4> <br> 
+
+          <img src="Images/linegraph.png">
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h3>Another Look At Jackson</h3>
+        <p class="text-center">
+          <img src="Images/jacksonblackemployment.png">
+        </p>
+        <p>Jackson, with a population of fewer than 200,000 residents, less than 30 percent of whom holding a bachelor’s degree or higher in a science, technology, engineering, or math degree, was named a TechHire city in 2016. Participation in the campaign is completely voluntary but encourages community groups, workforce development agencies, economic development departments, and private sector employers to establish concrete goals to create training programs and partnerships to route residents to tech-centered jobs in a variety of occupations.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+      <div class="col-sm-8 graphic sticky">
+
+        <p><img id="chart" src="Images/table.jpg"></p>
+      </div>
+      <div class="col-sm-4">
+        <div class="step" id="chart-step-one">
+          <h3>Majority-Minority Cities Designated White House TechHire Communities (By Metro Area)</h3>
+          <p>Private information sector employment growth rate vs. black employment in private information sector growth rate
+
+</p>
+        </div>
+        <div class="step" id="chart-step-two">
+          <h3>Growth Isn't Growth</h3>
+          <p>While there has been steady growth in employment in state jobs across a wide range of industries, the city isn't seeing growth in employment in private technology-based companies. 
+</p>
+         
+        </div>
+        
+      </div>
+    </div>
+
+  <footer>
+    For additional insights, <a href="https://docs.google.com/spreadsheets/u/1/d/1U90MBAdj1Nkpoh6DqCI-U__ZqY15-qw0Q9O81kFx3eI/edit#gid=201209982" target="_blank"> please see my data analysis </a>of EEOC employment data.
+  </footer>
+
+  <!-- This is D3, our graphing library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+  <!-- include our scrolling library -->
+  <script src='https://unpkg.com/intersection-observer'></script>
+  <script src='https://unpkg.com/scrollama'></script>
+  <script src='stickyfill.min.js'></script>
+
+  <script>
+    /* Allow position: sticky to work in old browsers */
+    var elements = document.querySelectorAll('.sticky');
+    Stickyfill.add(elements);
+
+    // instantiate the scrollama
+    var scroller = scrollama();
+
+    scroller
+      .setup({
+        // IF YOU CHANGE THIS CHANGE THE .sticky CSS
+        offset: 0.33, // how far from the top?
+        step: '.step', // class for stepping through
+        debug: false, // shows the line
+        container: 'container'
+      })
+      .onStepEnter(function(response) {
+        // trigger the stepin event
+        d3.select(response.element).dispatch('stepin')
+        d3.select(response.element).classed('active', true)
+      })
+      .onStepExit(function(response) {
+        // trigger the stepout event
+        d3.select(response.element).dispatch('stepout')
+        d3.select(response.element).classed('active', false)
+      })
+  </script>
+
+  <script src='02-image-swapper.js'></script>
+</body>
+</html>
